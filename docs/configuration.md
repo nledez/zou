@@ -48,12 +48,14 @@ traditional auth and Active Directory auth (auth\_remote\_active\_directory).
 The email configuration is required for emails sent after a password reset and,
 email notifications.
 
+* `MAIL_ENABLED` (default: "True"): if you want to disable email sending, set to False
 * `MAIL_SERVER` (default: "localhost"): the host of your email server
 * `MAIL_PORT` (default: "25"): the port of your email server
 * `MAIL_USERNAME` (default: ""): the username to access to your mail server
 * `MAIL_PASSWORD` (default: ""): the password to access to your mail server
-* `MAIL_DEBUG` (default: "0"): set 1 if you are in a development environment
-  (emails are printed in the console instead of being sent).
+* `MAIL_DEBUG` (default: "0"): set 1 if you want have smtp debug information
+* `MAIL_DEBUG_BOBY` (default: "False"): set 1 if you are in a development environment
+  (emails are printed in the console).
 * `MAIL_USE_TLS` (default: "False"): To use TLS to communicate with the email
   server.
 * `MAIL_USE_SSL` (default: "False"): To use SSL to communicate with the email
